@@ -1,0 +1,5 @@
+rootProject.name = 'microservices-kubernetes-example'
+
+include 'book-ms'
+include 'client-ms'
+include 'reservation-ms'
