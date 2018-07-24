@@ -1,2 +1,3 @@
-# microservices-kubernetes-example
-An example about dockerized microservices and managed with Kubernetes.
+# bookstore-microservices
+
+Bookstore application built on microservices architecture basics.
