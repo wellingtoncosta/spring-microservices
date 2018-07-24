@@ -1,7 +1,7 @@
 buildscript {
     ext {
-        kotlinVersion = '1.2.41'
-        springBootVersion = '2.0.1.RELEASE'
+        kotlinVersion = '1.2.51'
+        springBootVersion = '2.0.3.RELEASE'
     }
 
     repositories {
@@ -15,4 +15,5 @@ buildscript {
         classpath("org.jetbrains.kotlin:kotlin-allopen:${kotlinVersion}")
         classpath("org.jetbrains.kotlin:kotlin-noarg:$kotlinVersion")
     }
+
 }

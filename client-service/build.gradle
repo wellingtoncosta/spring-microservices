@@ -26,7 +26,10 @@ compileTestKotlin {
 }
 
 dependencies {
-    compile "org.springframework.boot:spring-boot-starter-web:${springBootVersion}"
+    compile "org.springframework.boot:spring-boot-starter-webflux:${springBootVersion}"
+
+    compile "com.fasterxml.jackson.module:jackson-module-kotlin"
+
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}"
     compile "org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}"
 }
