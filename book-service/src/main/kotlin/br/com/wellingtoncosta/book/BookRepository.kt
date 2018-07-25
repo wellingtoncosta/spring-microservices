@@ -1,4 +1,4 @@
-package br.com.wellingtoncosta.bookms
+package br.com.wellingtoncosta.book
 
 import org.springframework.data.repository.reactive.ReactiveCrudRepository
 

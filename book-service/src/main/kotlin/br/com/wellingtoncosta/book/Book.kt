@@ -1,4 +1,4 @@
-package br.com.wellingtoncosta.bookms
+package br.com.wellingtoncosta.book
 
 import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
@@ -8,9 +8,9 @@ import org.springframework.data.mongodb.core.mapping.Document
  */
 @Document
 data class Book(
-        @Id val id: String,
-        val title: String,
-        val description: String = "",
-        val author: String,
-        val year: String
+        @Id var id: String,
+        var title: String,
+        var description: String = "",
+        var author: String,
+        var year: String
 )

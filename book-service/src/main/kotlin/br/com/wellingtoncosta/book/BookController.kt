@@ -1,4 +1,4 @@
-package br.com.wellingtoncosta.bookms
+package br.com.wellingtoncosta.book
 
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.*
