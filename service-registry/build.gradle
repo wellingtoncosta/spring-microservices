@@ -31,10 +31,7 @@ compileTestKotlin {
 dependencies {
     compile "org.springframework.boot:spring-boot-starter-webflux"
     compile "org.springframework.boot:spring-boot-starter-actuator"
-    compile "org.springframework.boot:spring-boot-starter-data-mongodb-reactive"
-    compile "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client"
-
-    compile "com.fasterxml.jackson.module:jackson-module-kotlin"
+    compile "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server"
 
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}"
     compile "org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}"
