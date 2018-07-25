@@ -27,6 +27,8 @@ compileTestKotlin {
 
 dependencies {
     compile "org.springframework.boot:spring-boot-starter-webflux:${springBootVersion}"
+    compile "org.springframework.boot:spring-boot-starter-data-mongodb-reactive:${springBootVersion}"
+    compile "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client"
 
     compile "com.fasterxml.jackson.module:jackson-module-kotlin"
 
