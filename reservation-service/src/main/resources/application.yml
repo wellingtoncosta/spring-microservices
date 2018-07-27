@@ -8,7 +8,7 @@ spring:
       database: reservations
 
 server:
-  port: ${PORT:8082}
+  port: ${PORT:0}
 
 eureka:
   client:

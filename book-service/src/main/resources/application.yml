@@ -8,7 +8,7 @@ spring:
       database: books
 
 server:
-  port: ${PORT:8080}
+  port: ${PORT:0}
 
 eureka:
   client:
