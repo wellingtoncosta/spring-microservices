@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: client-service
+  data:
+    mongodb:
+      host: localhost
+      port: 17017
+      database: clients
+
+server:
+  port: ${PORT:8081}
+
+eureka:
+  client:
+    fetchRegistry: true
+    registryFetchIntervalSeconds: 5
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+  instance:
+    preferIpAddress: true

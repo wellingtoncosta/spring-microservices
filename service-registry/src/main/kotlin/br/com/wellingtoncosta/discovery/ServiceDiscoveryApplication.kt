@@ -1,4 +1,4 @@
-package br.com.wellingtoncosta.reservation
+package br.com.wellingtoncosta.discovery
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

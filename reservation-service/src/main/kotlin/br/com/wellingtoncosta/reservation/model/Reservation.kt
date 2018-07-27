@@ -1,4 +1,4 @@
-package br.com.wellingtoncosta.reservation
+package br.com.wellingtoncosta.reservation.model
 
 import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
@@ -11,9 +11,9 @@ import java.util.*
  */
 @Document
 data class Reservation(
-    @Id var id: String,
-    var bookId: String,
-    var clientId: String,
-    @DateTimeFormat(iso = DATE_TIME) var reservedAt: Date,
-    @DateTimeFormat(iso = DATE_TIME) var returnedAt: Date? = null
+        @Id var id: String = UUID.randomUUID().toString(),
+        var bookId: String,
+        var clientId: String,
+        @DateTimeFormat(iso = DATE_TIME) var reservedAt: Date,
+        @DateTimeFormat(iso = DATE_TIME) var returnedAt: Date? = null
 )

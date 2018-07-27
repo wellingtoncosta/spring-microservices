@@ -1,5 +1,6 @@
-package br.com.wellingtoncosta.reservation
+package br.com.wellingtoncosta.reservation.repository
 
+import br.com.wellingtoncosta.reservation.model.Reservation
 import org.springframework.data.repository.reactive.ReactiveCrudRepository
 
 /**

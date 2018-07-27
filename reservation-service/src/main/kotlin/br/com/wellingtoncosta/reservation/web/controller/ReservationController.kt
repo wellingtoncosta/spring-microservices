@@ -1,5 +1,7 @@
-package br.com.wellingtoncosta.reservation
+package br.com.wellingtoncosta.reservation.web.controller
 
+import br.com.wellingtoncosta.reservation.service.ReservationService
+import br.com.wellingtoncosta.reservation.model.Reservation
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.*
 import org.springframework.http.MediaType.APPLICATION_JSON_UTF8_VALUE as JSON
@@ -12,18 +14,18 @@ import org.springframework.http.MediaType.APPLICATION_JSON_UTF8_VALUE as JSON
 class ReservationController {
 
     @Autowired
-    private lateinit var repository: ReservationRepository
+    private lateinit var service: ReservationService
 
     @GetMapping(produces = [(JSON)])
-    fun findAll() = repository.findAll()
+    fun findAll() = service.findAll()
 
     @GetMapping(produces = [(JSON)], value = ["/{id}"])
-    fun findById(@PathVariable("id") id: String) = repository.findById(id)
+    fun findById(@PathVariable("id") id: String) = service.findById(id)
 
     @PostMapping(consumes = [(JSON)], produces = [(JSON)])
-    fun save(@RequestBody reservation: Reservation) = repository.save(reservation)
+    fun save(@RequestBody reservation: Reservation) = service.save(reservation)
 
     @DeleteMapping(value = ["/{id}"])
-    fun delete(@PathVariable("id") id: String) = repository.deleteById(id)
+    fun delete(@PathVariable("id") id: String) = service.deleteById(id)
 
 }
