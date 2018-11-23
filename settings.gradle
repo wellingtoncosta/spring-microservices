@@ -1,6 +1,0 @@
-rootProject.name = 'bookstore-microservices'
-
-include 'book-service'
-include 'client-service'
-include 'reservation-service'
-include 'service-registry'
