@@ -11,11 +11,11 @@
 	<name>bookstore-microservices</name>
 
 	<modules>
+		<module>config-service</module>
 		<module>book-service</module>
 		<module>client-service</module>
 		<module>reservation-service</module>
 		<module>discovery-service</module>
-		<module>config-service</module>
-	</modules>
+    </modules>
 
 </project>
