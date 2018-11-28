@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>br.com.wellingtoncosta</groupId>
-	<artifactId>bookstore-microservices</artifactId>
+	<artifactId>spring-microservices</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<name>bookstore-microservices</name>
+	<name>spring-microservices</name>
 
 	<modules>
 		<module>config-service</module>
