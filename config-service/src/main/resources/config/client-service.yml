@@ -9,3 +9,26 @@ eureka:
       defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
   instance:
     preferIpAddress: true
+
+spring:
+  datasource:
+    initialization-mode: always
+    url: jdbc:h2:~/client-service-db
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+    platform: h2
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        show_sql: true
+        use-sql-comments: true
+        format_sql: true
+  h2:
+    console:
+      enabled: true
+      path: /h2
+      settings:
+        web-allow-others: true
