@@ -23,7 +23,8 @@
 		<module>reservation-service</module>
 		<module>discovery-service</module>
 		<module>gateway-service</module>
-	</modules>
+        <module>proxy-service</module>
+    </modules>
 
 	<dependencyManagement>
 		<dependencies>
