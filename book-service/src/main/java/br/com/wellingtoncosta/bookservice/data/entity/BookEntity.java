@@ -25,7 +25,7 @@ public class BookEntity {
     private Long id;
 
     @Column(name = "title", nullable = false)
-    private String tiile;
+    private String title;
 
     @Column(name = "author", nullable = false)
     private String author;

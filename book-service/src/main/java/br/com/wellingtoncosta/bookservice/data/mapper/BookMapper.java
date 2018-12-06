@@ -16,7 +16,7 @@ public final class BookMapper {
     public static Book toDomain(BookEntity bookEntity) {
         Book book = new Book();
         book.setId(bookEntity.getId());
-        book.setTiile(bookEntity.getTiile());
+        book.setTiile(bookEntity.getTitle());
         book.setAuthor(bookEntity.getAuthor());
         book.setDescription(bookEntity.getDescription());
         book.setReleaseDate(bookEntity.getReleaseDate());

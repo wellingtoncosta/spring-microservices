@@ -5,7 +5,6 @@ import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceProperties;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
@@ -16,9 +15,8 @@ import javax.sql.DataSource;
  * @author Wellington Costa on 30/11/2018.
  */
 @Configuration
-@EnableJpaRepositories
 @EnableTransactionManagement
-@ComponentScan(basePackageClasses = { BookApplication.class })
+@EnableJpaRepositories(basePackageClasses = BookApplication.class)
 public class DatabaseConfiguration {
 
     @Bean public DataSource dataSource(DataSourceProperties dataSourceProperties) {

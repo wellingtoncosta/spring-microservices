@@ -52,7 +52,7 @@ import static java.util.stream.Collectors.toList;
                 .findByTitleAndAuthor(book.getTiile(), book.getAuthor());
 
         if(!hasEquals.isEmpty()) {
-            throw new BookAlreadyExistsException();
+            throw new BookAlreadyExistsException(book.getTiile(), book.getAuthor());
         }
 
         BookEntity entity = repository.save(toEntity(book));
