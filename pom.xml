@@ -22,7 +22,6 @@
 		<module>client-service</module>
 		<module>reservation-service</module>
 		<module>discovery-service</module>
-		<module>gateway-service</module>
         <module>proxy-service</module>
     </modules>
 
