@@ -2,7 +2,6 @@ package br.com.wellingtoncosta.bookservice.data.mapper;
 
 import br.com.wellingtoncosta.bookservice.data.entity.BookEntity;
 import br.com.wellingtoncosta.bookservice.domain.model.Book;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 /**
  * @author Wellington Costa on 30/11/2018.
@@ -10,7 +9,7 @@ import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 public final class BookMapper {
 
     private BookMapper() {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     public static Book toDomain(BookEntity bookEntity) {

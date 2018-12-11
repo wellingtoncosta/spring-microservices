@@ -2,7 +2,6 @@ package br.com.wellingtoncosta.clientservice.data.mapper;
 
 import br.com.wellingtoncosta.clientservice.data.entity.ClientEntity;
 import br.com.wellingtoncosta.clientservice.domain.model.Client;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 /**
  * @author Wellington Costa on 05/12/18
@@ -10,7 +9,7 @@ import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 public final class ClientMapper {
 
     private ClientMapper() {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     public static Client toDomain(ClientEntity entity) {

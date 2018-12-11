@@ -19,7 +19,7 @@
             <artifactId>HikariCP</artifactId>
         </dependency>
 
-        <!-- Lombok Dependency -->
+        <!-- Lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
