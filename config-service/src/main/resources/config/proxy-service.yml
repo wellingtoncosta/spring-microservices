@@ -10,14 +10,21 @@ eureka:
   instance:
     preferIpAddress: true
 
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+
 zuul:
   routes:
-    department:
+    books:
       path: /books/**
       serviceId: book-service
-    employee:
+    clients:
       path: /clients/**
       serviceId: client-service
-    organization:
+    reservations:
       path: /reservations/**
       serviceId: reservation-service

@@ -8,27 +8,27 @@ eureka:
     serviceUrl:
       defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
   instance:
-    preferIpAddress: true
+    instanceId: ${spring.cloud.client.hostname}:${spring.application.name}:${random.int[1,999999]}
+
+management:
+  endpoints.web.exposure.include: '*'
+  endpoint.shutdown.enabled: true
 
 spring:
   datasource:
     initialization-mode: always
-    url: jdbc:h2:~/client-service-db
-    username: sa
-    password:
-    driver-class-name: org.h2.Driver
-    platform: h2
+    url: jdbc:postgresql://localhost:4932/client_db
+    username: postgres
+    password: asdqwe123
+    driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
       ddl-auto: create-drop
     properties:
       hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
         show_sql: true
         use-sql-comments: true
         format_sql: true
-  h2:
-    console:
-      enabled: true
-      path: /h2
-      settings:
-        web-allow-others: true
