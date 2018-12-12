@@ -6,14 +6,15 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
+import java.util.Optional;
+
 /**
  * @author Wellington Costa on 10/12/18
  */
-@Repository
-public interface ReservationRepository extends CrudRepository<ReservationEntity, Long> {
+@Repository public interface ReservationRepository extends CrudRepository<ReservationEntity, Long> {
 
     @Query("from ReservationEntity where bookId = :bookId and returnedAt is null")
-    ReservationEntity findActiveByBookId(
+    Optional<ReservationEntity> findActiveByBookId(
             @Param("bookId") Long bookId
     );
 
